@@ -18,7 +18,7 @@
   <header class="cabeçalho">
     <div class="container">
       <input type="checkbox" id="menu" class="container__botao">
-      <label for="menu">
+      <label for="menu" class="conteiner__rotulo">
         <span class="cabeçalho__menu-hamburguer container__imagem"></span>
       </label>
       <ul class="lista-menu">
@@ -45,7 +45,7 @@
 
     <ul class="opções">
       <input type="checkbox" id="opções-menu" class="opções__botão">
-      <label for="opções-menu">
+      <label for="opções-menu" class="opções__rotulo">
       <li class="opções__item">Categorias</li>
     </label>
     <ul class="lista-menu">
@@ -71,9 +71,16 @@
     </ul>
 
     <div class="container">
-      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem container__imagem-transpartente"></a>
-      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
-      <a href="#"><img src="img/Usuario.png" alt="Meu perfil" class="container__imagem"></a>
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" 
+        class="container__imagem container__imagem-transpartente"></a>
+      <a href="#" class="conteiner__link">
+        <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+        <p class="container__texto">Minha sacola</p>
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/Usuario.png" alt="Meu perfil" class="container__imagem">
+        <p class="conteiner__texto">Meu perfil</p>
+      </a>
     </div>
   </header>
 </body>
@@ -87,6 +94,7 @@
   <section class="carrossel">
     <h2 class="carrossel__titulo">Novos lançamentos</h2>
     <!-- Slider main container -->
+     <div class="carrossel__conteiner">
     <div class="swiper">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
@@ -142,6 +150,7 @@
 
   <section class=”carrossel”>
     <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="carrossel__conteiner">
     <div class="swiper">
       <!-- Additional required wrapper -->
       <!-- If we need pagination -->
@@ -191,7 +200,8 @@
         <a href="#" class="botões__ancora">Saiba mais</a>
       </div>
     </div>
-
+  </div>
+</div>
   </section>
 
   <section class="tópicos">
@@ -236,6 +246,82 @@
 
   <footer class="rodapé">
     <h2 class="rodapé__titulo">Grupo Alura</h2>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé_titulo">Educação</li>
+      <li class="lista-rodapé__item">
+        <img src="img/Caelum.png" alt="Logo da Caelum" />
+        <a href="#" class="lista-rodapé__link">Caelum</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/CasaDoCodigo.png" alt="Logo da Casa do Código" />
+        <a href="#" class="lista-rodapé__link">Casa do Código</a>
+      </li>
+    </ul>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Educação online</li>
+      <li class="lista-rodapé__item">
+        <img src="img/Alura.png" alt="Logo da Alura" />
+        <a href="#" class="lista-rodapé__link">Alura</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/AluraEmpresas.png" alt="Logo da Alura para Empresas" />
+        <a href="#" class="lista-rodapé__link">Alura para Empresas</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/AluraLatam.png" alt="Logo da Alura Latam" />
+        <a href="#" class="lista-rodapé__link">Alura LATAM</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/AluraStart.png" alt="Logo da Alura START" />
+        <a href="#" class="lista-rodapé__link">Alura Start</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/MusicDot.png" alt="Logo da Music Dot" />
+        <a href="#" class="lista-rodapé__link">Music Dot</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/AluraLingua.png" alt="Logo da Alura Lingua" />
+        <a href="#" class="lista-rodapé__link">Alura Língua</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/PM3.png" alt="Logo da PM3" />
+        <a href="#" class="lista-rodapé__link">PM3</a>
+      </li>
+    </ul>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Comunidade</li>
+      <li class="lista-rodapé__item">
+        <img src="img/HipstersTech.png" alt="Logo do Hipsters ponto Tech" />
+        <a href="#" class="lista-rodapé__link">Hipsters ponto Tech</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/Scuba.png" alt="Logo do Scuba Dev" />
+        <a href="#" class="lista-rodapé__link">Scuba Dev</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/Layers.png" alt="Logo do Layers ponto Tech" />
+        <a href="#" class="lista-rodapé__link">Layers ponto Tech</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/LikeABoss.png" alt="Logo do Like a Boss" />
+        <a href="#" class="lista-rodapé__link">Like a Boss</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img
+          src="img/CarreiraSemFronteira.png"
+          alt="Logo do Carreira sem fronteiras"
+        />
+        <a href="#" class="lista-rodapé__link">Carreira sem fronteiras</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/HipstersJobs.png" alt="Logo do Hipsters ponto jobs" />
+        <a href="#" class="lista-rodapé__link">Hipsters ponto jobs</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/GUJ.png" alt="Logo do GUJ" />
+        <a href="#" class="lista-rodapé__link">GUJ</a>
+      </li>
+    </ul>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
